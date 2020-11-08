@@ -132,7 +132,9 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="first">
         <Stack.Screen options={{ headerShown: false }} name="first" component={getStack} />
-        <Stack.Screen options={{ headerShown: false }} name="second" component={getTabNav} />
+        <Stack.Screen options={{ headerShown: false }} name="second" component={getTabNav}   options={{
+        animationEnabled: false, headerShown: false 
+      }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
